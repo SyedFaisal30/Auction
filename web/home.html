@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUCTION ARENA</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff8181;
+    color: #060606;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    font-weight: 1000;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box, .box1 {
+    width: 100%;
+    margin-bottom: 2%;
+    box-shadow: 0px 0px 5px 0px rgba(73, 73, 73, 0.2);
+    border-radius: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.box {
+    background-color: #ff9260;
+    padding: 30px;
+}
+
+.box1 {
+    background-color: #f8f8ff;
+    padding: 2%;
+}
+
+.hmm {
+    background-color: aliceblue;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('auction.png');
+    background-size: cover;
+    color: #ffecdb;
+    text-align: center;
+    padding: 150px 0;
+}
+
+footer {
+    background-color: #ff8181;
+    color: #000000;
+    padding: 20px 50px;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    width: 113vw;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.time-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b5b5b5;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        width: 113vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box, .box1 {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .time-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .time-container > div {
+        margin: 10px 0;
+        padding: 0 20px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+    .footer{
+        width: 113vw;
+    }
+}
+
+    </style>
+</head>
+
+<body class="hmm">
+
+    <header>
+        <h1 style="font-size: 40px; font-family:times new roman;">
+            AUCTION ARENA</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="cars.html">CARS</a></li>
+                <li><a href="bikes.html">BIKES</a></li>
+                <li><a href="register.html">REGISTER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br><br>
+
+    <div class="container">
+        <div class="box1">
+            <section class="hero">
+                <h2
+                    style="color:#000000; font-size: 35px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    <br><br>
+                    <span onmouseover="this.style.color='#ffffff';" onmouseout="this.style.color='#000000';">Join us for
+                        an
+                        Exciting Auction of Antique Cars and Bikes!</span>
+                </h2>
+                <p style="color:#e6e6fa; font-size: 25px; font-family: sans-serif; font-weight: 700;
+                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+                    Wide Selection of Antique Vehicles<br><br>Bidding Excitement<br><br>Expert
+                    Inspections<br><br>Transparent
+                    History Reports<br><br>Easy Registration<br><br>Knowledgeable Staff
+                </p><br>
+                <br>
+                <br><br><br>
+            </section>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="time-container">
+            <div style="padding-left: 50px;">
+                <br>
+                <u>
+                    <h2>Auction Time</h2>
+                </u>
+                <h3></h3>
+                <b>
+                    <p>Date & Location:
+                        <br>
+                        Date: 08-10-2023
+                        <br>
+                        Time: 11am-4pm
+                        <br>
+                        Location: Auctionarena.com
+                        <br><br>
+                    </p>
+                </b>
+            </div>
+            
+            <div style="padding-left: 300px; padding-right: 50px;">
+                <u>
+                    <br>
+                    <h3><b>Auction Type:DUTCH </b></h3>
+                </u>
+               <p>
+                <b>Royal <u>CARS</u> and <u>BIKES</b></u><br>
+                <b>Only One Final Bid</b><br>
+                <b>Auctioneer Have All The Rights</b>
+                <b>Transparent Result</b>
+                
+                        <br><br>
+                    </p>
+                </b>
+            </div>
+        </div>
+    </div>
+        <br><br><br>
+    <footer>
+        <p>&copy; 2023 Auction Association of India (AAIx). All rights reserved. </p>
+    </footer>
+
+</body>
+
+</html>

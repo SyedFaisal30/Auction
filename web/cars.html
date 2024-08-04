@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AUCTION ARENA</title>
+    <style>
+      /* Internal CSS */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #ff8181;
+        color: #060606;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 50px;
+        font-weight: 1000;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin: 0;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      nav li {
+        margin-left: 20px;
+      }
+
+      nav li:first-child {
+        margin-left: 0;
+      }
+
+      nav a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        padding-left: 20px;
+        font-weight: 700;
+      }
+
+      nav a:hover {
+        color: #ffffff;
+      }
+
+      .container {
+        width: 100vw;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .container1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .box {
+        width: 40vw;
+        background-color: #b7b7b7;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        padding: 2%;
+        box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+        border-radius: 30px;
+      }
+
+      .box1 {
+        width: 70%;
+        background-color: #b7b7b7;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        padding: 2%;
+        box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+        border-radius: 30px;
+        text-align: center;
+      }
+
+      .box1 img {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .box:hover {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      }
+
+      .box img {
+        width: 100%;
+        height: 13vh;
+      }
+
+      .box h2 {
+        margin-top: 0;
+      }
+
+      .hmm {
+        background-color: aliceblue;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-image: url("hero-bg.jpg");
+        background-size: cover;
+        color: #000000;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #ff8181;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 16px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .box {
+          width: 30%;
+          background-color: #b7b7b7;
+          margin-bottom: 2%;
+          padding: 2%;
+          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+          margin-left: 100px;
+          margin-right: 70px;
+          border-radius: 30px;
+        }
+      }
+      @media (max-width: 480px) {
+        .container {
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .box {
+          width: 28%;
+          background-color: #b7b7b7;
+          margin-bottom: 2%;
+          /* padding: 2%; */
+          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+          margin-left: 100px;
+          margin-right: 70px;
+          border-radius: 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="hmm">
+    <header>
+      <h1 style="font-size: 40px; font-family: times new roman">
+        AUCTION ARENA
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="cars.html">CARS</a></li>
+          <li><a href="bikes.html">BIKES</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <br /><br /><br /><br />
+    <section class="hero">
+      <br /><br />
+      <h2
+        style="
+          font-size: 80px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+        "
+      >
+        Cars
+      </h2>
+      <h2 style="font-size: 40px">Welcome To Our Online Auction!</h2>
+      <p style="font-size: 20px">Find Your Dream Car Here.</p>
+      <br /><br /><br /><br />
+    </section>
+    <br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <div class="container1">
+      <div class="box1">
+        <a href="register.html" style="display: block; text-align: center">
+          <img
+            src="car8.jpg"
+            alt="Product 1"
+            height="400"
+            width="700"
+            style="margin: 0 auto"
+          />
+        </a>
+        <h2>Lamborghini Countach</h2>
+        <h3>$10,000,000</h3>
+        <p>AA.C.101</p>
+      </div>
+    </div>
+
+    <br /><br /><br />
+    <div class="container">
+      <div class="box">
+        <a href="register.html"
+          ><img src="cark.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>Rolls Royce King Edition</h2>
+        <h3>$2,250,000</h3>
+        <p>AA.C.102</p>
+      </div>
+      <br />
+
+      <div class="box">
+        <a href="register.html"
+          ><img src="car2.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>Rolls Royce Blue Badge</h2>
+        <h3>$2,000,000</h3>
+        <p>AA.C.103</p>
+      </div>
+      <br />
+
+      <div class="box">
+        <a href="register.html"
+          ><img src="car1.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>Lexus Hi Bonet</h2>
+        <h3>$1,750,000</h3>
+        <p>AA.C.104</p>
+      </div>
+      <br />
+
+      <div class="box">
+        <a href="register.html"
+          ><img src="car3.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>Rolls Royce Premium</h2>
+        <h3>$1,500,000</h3>
+        <p>AA.C.105</p>
+      </div>
+      <br />
+
+      <div class="box">
+        <a href="register.html"
+          ><img src="car6.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>Black Cadillac</h2>
+        <h3>$1,250,000</h3>
+        <p>AA.C.106</p>
+      </div>
+      <br />
+
+      <div class="box">
+        <a href="register.html"
+          ><img src="car4.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>Mustang Muscle</h2>
+        <h3>$1,000,000</h3>
+        <p>AA.C.107</p>
+      </div>
+      <br />
+
+      <div class="box">
+        <a href="register.html"
+          ><img src="car5.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>GTR 34</h2>
+        <h3>$750,000</h3>
+        <p>AA.C.108</p>
+      </div>
+      <br />
+
+      <div class="box">
+        <a href="register.html"
+          ><img src="car7.jpg" alt="Product 1" height="40" width="60"
+        /></a>
+        <h2>Ferrari 1st Edition</h2>
+        <h3>$500,000</h3>
+        <p>AA.C.109</p>
+      </div>
+      <br />
+    </div>
+    <br /><br />
+
+    <footer>
+      <p>
+        &copy; © 2023 Auction Association of India (AAIx).All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
